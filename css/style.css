@@ -120,11 +120,10 @@ body {
   width: 100%;
   height: 438px;
   margin: 0 auto;
-  margin-bottom: 150px;
+  margin-bottom: 110px;
 }
 .hero{
 	margin-top: 99px;
-
 }
 .wrapper{
 	display: grid;
@@ -194,8 +193,7 @@ p{
 	
 }
 .hero-form{
-	
-	
+  margin-top: 20px;
 	width: 356px;
     height: 280px;
 	
@@ -226,26 +224,28 @@ color: #64607D;
 opacity: 0.4;
 }
 .hero__submit{
+  display: inline-block;
 width: 360px;
 height: 60px;
 background: #FF7F5C;
 border-radius: 5px;
-
-padding: 17px 124px;
+padding: 17px 114px;
 color: #fff;
-font-size: 14px;
+font-size: 18px;
 font-weight: 600;
 line-height: 1.38em;
 border-radius: 10px;
 text-decoration: none;
+
 }
 
 /*section feature */
 
-.featured{
+.featured .container{
 	
   width: 1440px;
-  height: 239px;
+  height: 139px;
+  text-align: center;
 
 }
 .featured__title{
@@ -273,6 +273,8 @@ margin-bottom: 36px;
 .about .container{
   width: 699px;
 height: 206px;
+
+
 
 }
 .about{
@@ -313,21 +315,70 @@ text-align: center;
 
 /*section process*/
 
-.process{
-width: 1043px;
-height: 228px;
-background-color: #c53131;
+
+
+
+
+.process .container{
+  width: 1043px;
+  height: 228px;
+  
+
 }
 
 .grid-container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0xp;
-  grid-template-areas: 
-  "Col1 Col2 Col3"
-  ;
+  gap: 85px;
+  text-align: left;
+  
 }
-.Col1{grid-area:Col1 ;}
-.Col2{grid-area:Col2 ;}
-.Col3{grid-area:Col3 ;}
+.Col{
+  height: 228px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+.process__logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background-color:#E8F2FF ;
+  border-radius: 15px;
+ 
+}
+.process__title{
+  font-weight: 800;
+font-size: 16px;
+line-height: 30px;
+letter-spacing: -0.03em;
+color: #000000;
+}
+.process__text{
+  font-weight: 500;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: -0.02em;
+color: #757095;
+}
+
+.Col1{
+  background-image: url(/assets/1.png);
+  background-repeat: no-repeat;
+  background-position:top right;
+}
+.Col2{
+  background-image: url(/assets/2.png);
+  background-repeat: no-repeat;
+  background-position:top right;
+}
+.Col3{
+  background-image: url(/assets/3.png);
+  background-repeat: no-repeat;
+  background-position:top right;
+}
+
